@@ -17,12 +17,66 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="xyzStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/xyz_dark</item>
+        <item name="android:actionBarItemBackground">@color/xyz_primary</item>
+        <item name="android:textColor">@color/xyz_text_color_default_black</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="xyz_article_title_font" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/xyz_text_color_default_black</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="xyz_article_sub_title_font" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/xyz_subtitle_gray</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="xyz_detail_article_title_font" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/xyz_title_white</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="xyz_detail_article_sub_title_font" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/xyz_subtitle_light_gray</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="xyz_body_text" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/xyz_text_color_default_black</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:textSize">@dimen/article_body_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/article_body_line_spacing</item>
+
+        <item name="android:paddingLeft">@dimen/article_body_left_right_padding</item>
+        <item name="android:paddingRight">@dimen/article_body_left_right_padding</item>
+        <item name="android:paddingTop">@dimen/article_body_top_bottom_padding</item>
+        <item name="android:paddingBottom">@dimen/article_body_top_bottom_padding</item>
 
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="xyz_fab" parent="Theme.AppCompat.Light">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_gravity">bottom|end</item>
     </style>
 
 </resources>
